@@ -14,6 +14,19 @@
 .phpunit.result.cache
 ###< phpunit/phpunit ###
 
+# Ignore Composer & Node dependencies (already covered but just in case)
+node_modules/
+npm-debug.log*
+yarn-error.log
+.pnp/
+.pnp.js
+
+# Ignore uploaded files
+public/uploads/
+
+# Ignore logs
+/var/log/
+
 ###> symfony/phpunit-bridge ###
 .phpunit.result.cache
 /phpunit.xml
@@ -23,3 +36,8 @@
 /public/assets/
 /assets/vendor/
 ###< symfony/asset-mapper ###
+
+###> squizlabs/php_codesniffer ###
+/.phpcs-cache
+/phpcs.xml
+###< squizlabs/php_codesniffer ###
